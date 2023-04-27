@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <h1 id="heading">Calculator</h1>
+      </header>
+
+      <!-- calculatorBlock -->
+      <div class="calculatorBlock">
+        <div class="inputBlock">
+          <input type="text" id="calcResult" />
+        </div>
+        <div class="btnBlock">
+          <div>
+            <button value="AC" onclick="clearScreen()">AC</button>
+            <button value="DEL" onclick="deleteChar()">DEL</button>
+            <button value="%" onclick="display('%')">%</button>
+            <button value="/" onclick="display('/')">/</button>
+          </div>
+          <div>
+            <button value="7" onclick="display('7')">7</button>
+            <button value="8" onclick="display('8')">8</button>
+            <button value="9" onclick="display('9')">9</button>
+            <button value="*" onclick="display('*')">*</button>
+          </div>
+          <div>
+            <button value="4" onclick="display('4')">4</button>
+            <button value="5" onclick="display('5')">5</button>
+            <button value="6" onclick="display('6')">6</button>
+            <button value="-" onclick="display('-')">&minus;</button>
+          </div>
+          <div>
+            <button value="1" onclick="display('1')">1</button>
+            <button value="2" onclick="display('2')">2</button>
+            <button value="3" onclick="display('3')">3</button>
+            <button value="+" onclick="display('+')">+</button>
+          </div>
+          <div>
+            <button value="0" onclick="display('0')">0</button>
+            <button value="." onclick="display('.')">.</button>
+            <button value="=" onclick="calculate()">=</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <span>&copy;2023 Nilkamal Gilbile</span>
+        <div class="social-img">
+          <img src="images/facebook.png" alt="facebook" />
+          <img src="images/insta.png" alt="instagram" />
+          <img src="images/youtube.png" alt="youtube" />
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
